@@ -4,12 +4,39 @@
 body {
   padding: 0;
   margin: 0;
+  color: #777777;
   background: #FAFAFA;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-size: 16px;
+  font-weight: 300;
+}
+p {
+  line-height: 25px;
+}
+p code {
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  font-size: 0.9em;
+  border: 1px solid #DDDDDD;
+  padding: 1px 3px;
+  color: #545454;
+  background: #EEEEEE;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+a {
+  color: #0088FF;
+  text-decoration: none;
+  border-bottom: 1px dashed #0088FF;
+  padding-bottom: 0;
 }
 h1 {
   font-family: 'Oxygen', Helvetica, Arial;
   font-size: 3.5em;
-  font-weight: 600;
+  font-weight: 300;
   color: #7CCBFF;
   margin: 0;
   padding: 0;
@@ -20,6 +47,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   color: #999999;
+  margin-top: 60px;
 }
 h2.made-by {
   font-family: 'Oxygen', Helvetica, Arial;
@@ -28,6 +56,10 @@ h2.made-by {
   font-size: 1em;
   margin: 0;
   padding: 0;
+}
+.footer {
+  margin: 20px 0;
+  padding-top: 30px;
 }
 .wrap {
   margin: 20px auto;

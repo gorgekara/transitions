@@ -22,16 +22,51 @@
 	-moz-box-sizing: @val;
 }
 
+.border-radius(@val) {
+	border-radius: @val;
+	-webkit-border-radius: @val;
+	-moz-border-radius: @val;
+	-ms-border-radius: @val;
+	-o-border-radius: @val;
+}
+
 body {
     padding: 0;
     margin: 0;
+    color: #777777;
     background: #FAFAFA;
+    font-family: @regularFont;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p {
+	line-height: 25px;
+
+	code {
+		font-family: @regularFont;
+		font-weight: 300;
+		font-size: 0.9em;
+		border: 1px solid #DDDDDD;
+		padding: 1px 3px;
+		color: #545454;
+		background: #EEEEEE;
+		.border-radius(5px);
+	}
+
+}
+
+a {
+	color: #0088FF;
+	text-decoration: none;
+	border-bottom: 1px dashed #0088FF;
+	padding-bottom: 0;
 }
 
 h1 {
 	font-family: @regularFont;
 	font-size: 3.5em;
-	font-weight: 600;
+	font-weight: 300;
 	color: #7CCBFF;
 	margin: 0;
 	padding: 0;
@@ -43,6 +78,7 @@ h2 {
 	font-weight: 600;
 	text-transform: uppercase;;
 	color: #999999;
+	margin-top: 60px;
 
 	&.made-by {
 		font-family: @regularFont;
@@ -53,6 +89,11 @@ h2 {
 		padding: 0;
 	}
 
+}
+
+.footer {
+	margin: 20px 0;
+	padding-top: 30px;
 }
 
 .wrap {
