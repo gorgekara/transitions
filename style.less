@@ -1,0 +1,92 @@
+/* =================
+	Variables & Mixins
+====================*/
+
+@regularFont: 'Oxygen', Helvetica, Arial;
+
+.transform(@val) {
+	transform: @val;
+	-webkit-transform: @val;
+	-moz-transform: @val;
+}
+
+.transition(@val) {
+	transition: @val;
+	-webkit-transition: @val;
+	-moz-transition: @val;
+}
+
+.box-sizing(@val) {
+	box-sizing: @val;
+	-webkit-box-sizing: @val;
+	-moz-box-sizing: @val;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #FAFAFA;
+}
+
+h1 {
+	font-family: @regularFont;
+	font-size: 3.5em;
+	font-weight: 600;
+	color: #7CCBFF;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-family: @regularFont;
+	font-size: 2em;
+	font-weight: 600;
+	text-transform: uppercase;;
+	color: #999999;
+
+	&.made-by {
+		font-family: @regularFont;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+.wrap {
+	margin: 20px auto;
+	width: 960px;
+
+	/* ZOOM & CURTAIN */
+	@import 'styles/setOne.less';
+
+	/* TOP -> BOTTOM */
+	@import 'styles/setTwo.less';
+
+	/* BOTTOM -> TOP */
+	@import 'styles/setThree.less';
+
+	/* LEFT -> RIGHT (BOTTOM) */
+	@import 'styles/setFour.less';
+
+	/* LEFT -> RIGHT (TOP) */
+	@import 'styles/setFive.less';
+
+	/* RIGHT -> LEFT  (BOTTOM) */
+	@import 'styles/setSix.less';
+
+	/* RIGHT > LEFT (TOP) */
+	@import 'styles/setSeven.less';
+
+	/* PUSH AND PULL */
+	@import 'styles/setEight.less';
+
+	/* ZOOM & ROTATE */
+	@import 'styles/setNine.less';
+
+	/* FADE & STRIPE */
+	@import 'styles/setTen.less';
+
+}

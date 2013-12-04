@@ -1,0 +1,597 @@
+/* =================
+	Variables & Mixins
+====================*/
+body {
+  padding: 0;
+  margin: 0;
+  background: #FAFAFA;
+}
+h1 {
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-size: 3.5em;
+  font-weight: 600;
+  color: #7CCBFF;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999999;
+}
+h2.made-by {
+  font-family: 'Oxygen', Helvetica, Arial;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  margin: 20px auto;
+  width: 960px;
+  /* ZOOM & CURTAIN */
+
+  /* ================
+	Set One - Zoom & Curtain
+=================== */
+
+  /* TOP -> BOTTOM */
+
+  /* ================
+	Set Two - Slide Top
+=================== */
+
+  /* BOTTOM -> TOP */
+
+  /* ================
+	Set Three - Slide Bottom
+=================== */
+
+  /* LEFT -> RIGHT (BOTTOM) */
+
+  /* ================
+	Set Four - Slide Left/Bottom
+=================== */
+
+  /* LEFT -> RIGHT (TOP) */
+
+  /* ================
+	Set Four - Slide Left/Top
+=================== */
+
+  /* RIGHT -> LEFT  (BOTTOM) */
+
+  /* ================
+	Set Six - Slide Right/Bottom
+=================== */
+
+  /* RIGHT > LEFT (TOP) */
+
+  /* ================
+	Set Seven - Slide Right/Top
+=================== */
+
+  /* PUSH AND PULL */
+
+  /* ================
+	Set Eight
+=================== */
+
+  /* ZOOM & ROTATE */
+
+  /* ================
+	Set Nine
+=================== */
+
+  /* FADE & STRIPE */
+
+  /* ================
+	Set Ten
+=================== */
+
+}
+.wrap .galleryOne {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryOne li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.wrap .galleryOne li img {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  position: relative;
+}
+.wrap .galleryOne li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryOne li:hover .caption {
+  display: block;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+.wrap .galleryOne li:hover img {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+}
+.wrap .galleryOne li .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 60px 30px;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .galleryTwo {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryTwo li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .galleryTwo li img {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  position: relative;
+}
+.wrap .galleryTwo li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryTwo li:hover .caption {
+  display: block;
+  top: 0;
+}
+.wrap .galleryTwo li .caption {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .galleryThree {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryThree li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .galleryThree li img {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  position: relative;
+}
+.wrap .galleryThree li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryThree li:hover .caption {
+  display: block;
+  bottom: 0;
+}
+.wrap .galleryThree li .caption {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .galleryFour {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryFour li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .galleryFour li img {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  position: relative;
+}
+.wrap .galleryFour li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryFour li:hover .caption {
+  display: block;
+  left: 0;
+}
+.wrap .galleryFour li .caption {
+  position: absolute;
+  bottom: 0;
+  left: -500px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .galleryFive {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryFive li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .galleryFive li img {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  position: relative;
+}
+.wrap .galleryFive li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryFive li:hover .caption {
+  display: block;
+  left: 0;
+}
+.wrap .galleryFive li .caption {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .gallerySix {
+  padding: 0;
+  margin: 0;
+}
+.wrap .gallerySix li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .gallerySix li img {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  position: relative;
+}
+.wrap .gallerySix li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .gallerySix li:hover .caption {
+  display: block;
+  right: 0;
+}
+.wrap .gallerySix li .caption {
+  position: absolute;
+  bottom: 0;
+  right: -500px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .gallerySeven {
+  padding: 0;
+  margin: 0;
+}
+.wrap .gallerySeven li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .gallerySeven li img {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  position: relative;
+}
+.wrap .gallerySeven li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .gallerySeven li:hover .caption {
+  display: block;
+  right: 0;
+}
+.wrap .gallerySeven li .caption {
+  position: absolute;
+  top: 0;
+  right: -500px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .galleryEight {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryEight li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .galleryEight li img {
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  position: relative;
+}
+.wrap .galleryEight li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryEight li:hover img {
+  top: -30px;
+}
+.wrap .galleryEight li:hover .caption {
+  display: block;
+  bottom: 0;
+}
+.wrap .galleryEight li .caption {
+  position: absolute;
+  bottom: -400px;
+  left: 0;
+  background: #0088FF;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+.wrap .galleryNine {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryNine li {
+  display: inline-block;
+  position: relative;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .galleryNine li img {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  position: relative;
+}
+.wrap .galleryNine li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryNine li:hover img {
+  opacity: 0.9;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+}
+.wrap .galleryNine li:hover .caption {
+  display: block;
+  opacity: 1;
+  transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+}
+.wrap .galleryNine li .caption {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  opacity: 0;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+.wrap .galleryTen {
+  padding: 0;
+  margin: 0;
+}
+.wrap .galleryTen li {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Oxygen', Helvetica, Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+.wrap .galleryTen li img {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  position: relative;
+}
+.wrap .galleryTen li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wrap .galleryTen li:hover img {
+  opacity: 0.9;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+}
+.wrap .galleryTen li:hover .caption {
+  display: block;
+  opacity: 1;
+}
+.wrap .galleryTen li .caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  opacity: 0;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
